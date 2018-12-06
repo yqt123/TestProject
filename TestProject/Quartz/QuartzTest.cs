@@ -50,7 +50,7 @@ namespace TestProject.Quartz
 
             properties["quartz.dataSource.myDS.connectionString"] = @"Database='quartz';Data Source='127.0.0.1';User Id='dev';Password='dev123';charset='utf8';pooling=true;Allow Zero Datetime=True";
             properties["quartz.dataSource.myDS.provider"] = "MySql";
-            
+            //
             var schedulerFactory = new StdSchedulerFactory(properties);
             //var scheduler = schedulerFactory.GetScheduler();
             scheduler = schedulerFactory.GetScheduler().GetAwaiter().GetResult();
