@@ -10,7 +10,9 @@ namespace TestProject
     {
         static void Main(string[] args)
         {
-            Test_AsyncAwait.Execute();
+            //Test.Execute<Quartz.QuartzTest>(); //Quartz测试
+            //Test.Execute<Owin.DefaultOwinTest>(); //Owin测试
+            Test.Execute<CrystalQuartz.CrystalQuartzTest>();//Quartz监控测试
         }
     }
 }

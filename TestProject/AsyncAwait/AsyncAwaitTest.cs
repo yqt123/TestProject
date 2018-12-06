@@ -4,16 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TestProject
+namespace TestProject.AsyncAwait
 {
-    public class Test_AsyncAwait
+    public class AsyncAwaitTest : ITest
     {
-        public static void Execute()
+        public void Execute()
         {
             var result = MyMethod(); //将异步执行
             //Console.WriteLine(result.Result); //比方法1多了一行
             Console.WriteLine("end");
-            Console.ReadLine();
         }
 
         static async Task<int> MyMethod()
